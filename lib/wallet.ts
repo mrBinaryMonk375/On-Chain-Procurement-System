@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let _kit: any = null;
 
 export async function getWalletKit() {

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 if (typeof BigInt !== 'undefined' && !(BigInt.prototype as any).toJSON) {
   Object.defineProperty(BigInt.prototype, 'toJSON', {
     get() {
