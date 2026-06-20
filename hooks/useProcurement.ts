@@ -22,6 +22,7 @@ import { useAppStore, mockRequests, mockBids, mockEvents } from '../lib/store';
 import { ContractEvent } from '../types';
 
 // Helper to prepare transaction with fallback to simulate/assemble
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function prepareTransaction(tx: any) {
   try {
     return await server.prepareTransaction(tx);
@@ -87,6 +88,7 @@ export async function fetchContractEvents(): Promise<ContractEvent[]> {
       
       return {
         id: evt.id,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         type: typeSymbol as any,
         requestId,
         wallet,
@@ -150,6 +152,7 @@ export function useEvents() {
 }
 
 // Helper to sign and submit a transaction using the static StellarWalletsKit API
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function signAndSubmit(tx: any, address: string) {
   const preparedResult = await prepareTransaction(tx);
   // prepareTransaction may return a TransactionBuilder (needs .build()) or a Transaction
@@ -157,6 +160,7 @@ async function signAndSubmit(tx: any, address: string) {
     ? preparedResult.build()
     : preparedResult;
       const kit = await getWalletKit();
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const { signedTxXdr } = await kit.signTransaction((builtTx as any).toXDR(), {
     networkPassphrase: NETWORK_PASSPHRASE,
     address,
