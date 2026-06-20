@@ -4,7 +4,7 @@ import { ProcurementRequest, Bid } from '../types';
 export const RPC_URL = 'https://soroban-testnet.stellar.org';
 export const NETWORK_PASSPHRASE = 'Test SDF Network ; September 2015';
 export const CONTRACT_ID = 'CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO';
-export const NATIVE_TOKEN_ID = 'CDLZFC3SYJYDATH7K42SBVS4M2ZEDFGEKZWUW4T75W5NZIG3J5Z3W2W3';
+export const NATIVE_TOKEN_ID = 'CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC';
 
 export const server = new rpc.Server(RPC_URL);
 
