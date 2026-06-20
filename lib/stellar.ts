@@ -18,7 +18,7 @@ export async function callContractRead(method: string, args: unknown[] = []): Pr
     
     const scValArgs = args.map(arg => {
       if (arg && typeof arg === 'object' && '_switch' in arg) {
-        return arg; // Already an ScVal
+        return arg as xdr.ScVal; // Already an ScVal
       }
       // If the arg is an address-like string that starts with C or G, parse it as Address
       if (typeof arg === 'string' && (arg.startsWith('C') || arg.startsWith('G')) && arg.length === 56) {
