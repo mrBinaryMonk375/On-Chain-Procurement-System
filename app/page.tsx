@@ -179,7 +179,7 @@ export default function HomePage() {
               ⛓
             </div>
             <span className="text-sm font-semibold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              StellarProcure
+              Procure
             </span>
           </div>
           <p className="text-xs text-[var(--muted-foreground)]">

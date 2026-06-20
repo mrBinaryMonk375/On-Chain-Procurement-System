@@ -7,6 +7,8 @@ import { getWalletKit } from '@/lib/wallet';
 import { shortenAddress } from '@/lib/utils';
 import { useState, useEffect } from 'react';
 
+import { Briefcase } from 'lucide-react';
+
 const navItems = [
   { href: '/', label: 'Home', icon: '🏠' },
   { href: '/dashboard', label: 'Dashboard', icon: '💼' },
@@ -61,11 +63,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform">
-              ⛓
+            <div className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform">
+              <Briefcase size={18} />
             </div>
-            <span className="text-lg font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent hidden sm:inline">
-              StellarProcure
+            <span className="text-lg font-bold text-[var(--primary)] hidden sm:inline">
+              Procure
             </span>
           </Link>
 

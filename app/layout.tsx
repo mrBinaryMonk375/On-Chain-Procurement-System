@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "StellarProcure — On-Chain Procurement System",
+  title: "Procure — On-Chain Procurement System",
   description:
     "Decentralized procurement platform built on Stellar. Create RFPs, place bids, escrow funds, and track everything on-chain with Soroban smart contracts.",
   keywords: ["Stellar", "Soroban", "Procurement", "DApp", "Blockchain", "Smart Contracts"],

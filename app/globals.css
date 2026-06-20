@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0b14;
-  --foreground: #e2e8f0;
-  --card: #111827;
-  --card-foreground: #e2e8f0;
-  --popover: #111827;
-  --popover-foreground: #e2e8f0;
-  --primary: #6366f1;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #2563eb;
   --primary-foreground: #ffffff;
-  --secondary: #1e293b;
-  --secondary-foreground: #e2e8f0;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #1e293b;
-  --accent-foreground: #e2e8f0;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
   --destructive: #ef4444;
-  --border: #1e293b;
-  --input: #1e293b;
-  --ring: #6366f1;
-  --radius: 0.75rem;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2563eb;
+  --radius: 0.5rem;
   --success: #22c55e;
   --warning: #f59e0b;
-  --stellar: #6366f1;
-  --stellar-glow: rgba(99, 102, 241, 0.15);
+  --stellar: #2563eb;
+  --stellar-glow: rgba(37, 99, 235, 0.1);
 }
 
 @theme inline {
@@ -87,12 +87,17 @@ body {
   border-radius: var(--radius);
 }
 
-/* Glass card */
+/* Standard card */
 .glass-card {
-  background: rgba(17, 24, 39, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(99, 102, 241, 0.1);
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 /* Status badges */

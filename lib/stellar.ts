@@ -8,7 +8,7 @@ export const NATIVE_TOKEN_ID = 'CDLZFC3SYJYDATH7K42SBVS4M2ZEDFGEKZWUW4T75W5NZIG3
 
 export const server = new rpc.Server(RPC_URL);
 
-const DUMMY_SOURCE = 'GBRP5GTY2Y42YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZ2YZZQD';
+const DUMMY_SOURCE = 'GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH';
 
 // Read-only contract call
 export async function callContractRead(method: string, args: unknown[] = []): Promise<unknown> {
