@@ -54,7 +54,7 @@ export default function ActivityPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-white">Activity Feed</h1>
+          <h1 className="text-3xl font-bold text-black">Activity Feed</h1>
           <p className="text-[var(--muted-foreground)] mt-1">
             Real-time on-chain events from the procurement contract.
             <span className="inline-flex items-center gap-1 ml-2 text-xs text-emerald-400">
@@ -109,7 +109,7 @@ export default function ActivityPage() {
       {!isLoading && !isError && filtered.length === 0 && (
         <div className="glass-card p-10 text-center animate-fade-in">
           <span className="text-4xl">📡</span>
-          <p className="text-white font-medium mt-3">No events yet.</p>
+          <p className="text-black font-medium mt-3">No events yet.</p>
           <p className="text-xs text-[var(--muted-foreground)] mt-1">
             Contract events will appear here in real-time as users interact with the system.
           </p>
@@ -134,7 +134,7 @@ export default function ActivityPage() {
                 {/* Content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-sm font-semibold text-white">{eventLabels[event.type] || event.type}</span>
+                    <span className="text-sm font-semibold text-black">{eventLabels[event.type] || event.type}</span>
                     {event.requestId > 0 && (
                       <span className="text-xs font-mono text-[var(--muted-foreground)]">RFP #{event.requestId}</span>
                     )}

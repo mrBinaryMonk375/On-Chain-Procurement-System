@@ -55,7 +55,7 @@ export default function DashboardPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold text-white mb-2">Wallet Dashboard</h1>
+      <h1 className="text-3xl font-bold text-black mb-2">Wallet Dashboard</h1>
       <p className="text-[var(--muted-foreground)] mb-10">Manage your Stellar wallet connection and view account details.</p>
 
       {error && (
@@ -70,7 +70,7 @@ export default function DashboardPage() {
           <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-indigo-600/20 to-purple-600/20 border border-indigo-500/20 flex items-center justify-center text-4xl mb-6">
             🔗
           </div>
-          <h2 className="text-2xl font-bold text-white mb-3">Connect Your Wallet</h2>
+          <h2 className="text-2xl font-bold text-black mb-3">Connect Your Wallet</h2>
           <p className="text-[var(--muted-foreground)] max-w-md mx-auto mb-8">
             Connect a Stellar wallet to interact with the procurement smart contract on Testnet.
             We support Freighter, Albedo, xBull, and Lobstr wallets.
@@ -109,7 +109,7 @@ export default function DashboardPage() {
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <label className="text-xs text-[var(--muted-foreground)] uppercase tracking-wider">Wallet</label>
-                <p className="text-white font-medium mt-1">{walletName || 'Unknown'}</p>
+                <p className="text-black font-medium mt-1">{walletName || 'Unknown'}</p>
               </div>
               <div>
                 <label className="text-xs text-[var(--muted-foreground)] uppercase tracking-wider">Address</label>
@@ -133,7 +133,7 @@ export default function DashboardPage() {
             {/* Network */}
             <div className="glass-card p-6">
               <label className="text-xs text-[var(--muted-foreground)] uppercase tracking-wider">Network</label>
-              <p className="text-lg font-semibold text-white mt-2">Stellar Testnet</p>
+              <p className="text-lg font-semibold text-black mt-2">Stellar Testnet</p>
               <p className="text-xs text-[var(--muted-foreground)] mt-1 truncate">{RPC_URL}</p>
             </div>
 
@@ -154,7 +154,7 @@ export default function DashboardPage() {
 
           {/* Quick Actions */}
           <div className="glass-card p-6">
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Actions</h3>
+            <h3 className="text-lg font-semibold text-black mb-4">Quick Actions</h3>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link
                 href="/procurement"
@@ -162,7 +162,7 @@ export default function DashboardPage() {
               >
                 <span className="text-xl">📋</span>
                 <div>
-                  <p className="text-sm font-medium text-white">Procurement</p>
+                  <p className="text-sm font-medium text-black">Procurement</p>
                   <p className="text-xs text-[var(--muted-foreground)]">Create & manage RFPs</p>
                 </div>
               </Link>
@@ -172,7 +172,7 @@ export default function DashboardPage() {
               >
                 <span className="text-xl">⚡</span>
                 <div>
-                  <p className="text-sm font-medium text-white">Activity Feed</p>
+                  <p className="text-sm font-medium text-black">Activity Feed</p>
                   <p className="text-xs text-[var(--muted-foreground)]">Live contract events</p>
                 </div>
               </Link>
@@ -182,7 +182,7 @@ export default function DashboardPage() {
               >
                 <span className="text-xl">📜</span>
                 <div>
-                  <p className="text-sm font-medium text-white">Tx History</p>
+                  <p className="text-sm font-medium text-black">Tx History</p>
                   <p className="text-xs text-[var(--muted-foreground)]">Recent transactions</p>
                 </div>
               </Link>

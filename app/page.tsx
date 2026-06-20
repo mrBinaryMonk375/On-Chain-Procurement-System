@@ -129,7 +129,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">How It Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-black">How It Works</h2>
           <p className="mt-3 text-[var(--muted-foreground)] text-lg">End-to-end procurement powered by Soroban smart contracts</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -140,7 +140,7 @@ export default function HomePage() {
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <span className="text-3xl">{f.icon}</span>
-              <h3 className="text-lg font-semibold text-white mt-4">{f.title}</h3>
+              <h3 className="text-lg font-semibold text-black mt-4">{f.title}</h3>
               <p className="text-sm text-[var(--muted-foreground)] mt-2 leading-relaxed">{f.description}</p>
             </div>
           ))}
@@ -150,7 +150,7 @@ export default function HomePage() {
       {/* Step-by-Step */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">Get Started in 4 Steps</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-black">Get Started in 4 Steps</h2>
         </div>
         <div className="space-y-6">
           {steps.map((s, i) => (
@@ -163,7 +163,7 @@ export default function HomePage() {
                 {s.num}
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-white">{s.title}</h3>
+                <h3 className="text-lg font-semibold text-black">{s.title}</h3>
                 <p className="text-sm text-[var(--muted-foreground)] mt-1">{s.desc}</p>
               </div>
             </div>

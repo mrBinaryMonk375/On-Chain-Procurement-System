@@ -57,8 +57,8 @@ function CreateRFPModal({ onClose }: { onClose: () => void }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in" onClick={onClose}>
       <div className="glass-card w-full max-w-lg p-6 border border-indigo-500/20" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-white">Create Procurement Request</h2>
-          <button onClick={onClose} className="text-[var(--muted-foreground)] hover:text-white text-lg">✕</button>
+          <h2 className="text-xl font-bold text-black">Create Procurement Request</h2>
+          <button onClick={onClose} className="text-[var(--muted-foreground)] hover:text-black text-lg">✕</button>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -68,7 +68,7 @@ function CreateRFPModal({ onClose }: { onClose: () => void }) {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="e.g. Server Rack Equipment"
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm"
               required
             />
           </div>
@@ -79,7 +79,7 @@ function CreateRFPModal({ onClose }: { onClose: () => void }) {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Detailed description of what you need..."
               rows={3}
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm resize-none"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm resize-none"
               required
             />
           </div>
@@ -91,7 +91,7 @@ function CreateRFPModal({ onClose }: { onClose: () => void }) {
               onChange={(e) => setBudget(e.target.value)}
               placeholder="1000"
               min="1"
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-indigo-500/50 focus:outline-none transition-colors text-sm"
               required
             />
             <p className="text-xs text-[var(--muted-foreground)] mt-1">This amount will be locked in smart contract escrow.</p>
@@ -136,8 +136,8 @@ function PlaceBidModal({ requestId, maxBudget, onClose }: { requestId: number; m
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in" onClick={onClose}>
       <div className="glass-card w-full max-w-lg p-6 border border-emerald-500/20" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-white">Submit Bid for RFP #{requestId}</h2>
-          <button onClick={onClose} className="text-[var(--muted-foreground)] hover:text-white text-lg">✕</button>
+          <h2 className="text-xl font-bold text-black">Submit Bid for RFP #{requestId}</h2>
+          <button onClick={onClose} className="text-[var(--muted-foreground)] hover:text-black text-lg">✕</button>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -149,7 +149,7 @@ function PlaceBidModal({ requestId, maxBudget, onClose }: { requestId: number; m
               placeholder={`Max: ${maxBudget}`}
               max={maxBudget}
               min="1"
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm"
               required
             />
           </div>
@@ -161,7 +161,7 @@ function PlaceBidModal({ requestId, maxBudget, onClose }: { requestId: number; m
               onChange={(e) => setDeliveryTime(e.target.value)}
               placeholder="e.g. 7"
               min="1"
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm"
               required
             />
           </div>
@@ -172,7 +172,7 @@ function PlaceBidModal({ requestId, maxBudget, onClose }: { requestId: number; m
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Describe your offering..."
               rows={3}
-              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-white border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm resize-none"
+              className="w-full mt-1 px-4 py-2.5 rounded-lg bg-[var(--secondary)] text-black border border-[var(--border)] focus:border-emerald-500/50 focus:outline-none transition-colors text-sm resize-none"
               required
             />
           </div>
@@ -236,7 +236,7 @@ function RequestDetail({ requestId, onClose }: { requestId: number; onClose: () 
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
-              <h2 className="text-xl font-bold text-white">{req.title}</h2>
+              <h2 className="text-xl font-bold text-black">{req.title}</h2>
               <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${statusClass[req.status]}`}>
                 {statusLabel[req.status]}
               </span>
@@ -251,7 +251,7 @@ function RequestDetail({ requestId, onClose }: { requestId: number; onClose: () 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 pt-4 border-t border-[var(--border)]">
           <div>
             <p className="text-xs text-[var(--muted-foreground)]">RFP ID</p>
-            <p className="font-mono text-sm text-white">#{req.id}</p>
+            <p className="font-mono text-sm text-black">#{req.id}</p>
           </div>
           <div>
             <p className="text-xs text-[var(--muted-foreground)]">Buyer</p>
@@ -259,11 +259,11 @@ function RequestDetail({ requestId, onClose }: { requestId: number; onClose: () 
           </div>
           <div>
             <p className="text-xs text-[var(--muted-foreground)]">Created</p>
-            <p className="text-sm text-white">{timeAgo(req.createdAt)}</p>
+            <p className="text-sm text-black">{timeAgo(req.createdAt)}</p>
           </div>
           <div>
             <p className="text-xs text-[var(--muted-foreground)]">Bids</p>
-            <p className="text-sm text-white">{bids.length}</p>
+            <p className="text-sm text-black">{bids.length}</p>
           </div>
         </div>
 
@@ -300,7 +300,7 @@ function RequestDetail({ requestId, onClose }: { requestId: number; onClose: () 
 
       {/* Bids List */}
       <div>
-        <h3 className="text-lg font-semibold text-white mb-4">Bids ({bids.length})</h3>
+        <h3 className="text-lg font-semibold text-black mb-4">Bids ({bids.length})</h3>
         {bids.length === 0 ? (
           <div className="glass-card p-8 text-center">
             <span className="text-3xl">📭</span>
@@ -315,7 +315,7 @@ function RequestDetail({ requestId, onClose }: { requestId: number; onClose: () 
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="font-mono text-sm text-white">Bid #{bid.id}</span>
+                        <span className="font-mono text-sm text-black">Bid #{bid.id}</span>
                         <span className={`px-2 py-0.5 rounded-full text-xs ${
                           bid.status === BidStatus.Accepted ? 'status-open' :
                           bid.status === BidStatus.Rejected ? 'status-cancelled' :
@@ -379,7 +379,7 @@ export default function ProcurementPage() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-white">Procurement</h1>
+          <h1 className="text-3xl font-bold text-black">Procurement</h1>
           <p className="text-[var(--muted-foreground)] mt-1">Browse open RFPs, place bids, and manage procurement on-chain.</p>
         </div>
         {address && (
@@ -401,7 +401,7 @@ export default function ProcurementPage() {
             className={`px-4 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
               filter === val
                 ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30'
-                : 'text-[var(--muted-foreground)] hover:text-white hover:bg-white/5 border border-transparent'
+                : 'text-[var(--muted-foreground)] hover:text-black hover:bg-white/5 border border-transparent'
             }`}
           >
             {label}
@@ -429,7 +429,7 @@ export default function ProcurementPage() {
       {!isLoading && !isError && filtered.length === 0 && (
         <div className="glass-card p-10 text-center animate-fade-in">
           <span className="text-4xl">📭</span>
-          <p className="text-white font-medium mt-3">No procurement requests found.</p>
+          <p className="text-black font-medium mt-3">No procurement requests found.</p>
           <p className="text-xs text-[var(--muted-foreground)] mt-1">
             {filter === 'all' ? 'Be the first to create one!' : 'Try a different filter.'}
           </p>
@@ -461,7 +461,7 @@ export default function ProcurementPage() {
                     {statusLabel[req.status]}
                   </span>
                 </div>
-                <h3 className="text-base font-semibold text-white mb-2 line-clamp-1">{req.title}</h3>
+                <h3 className="text-base font-semibold text-black mb-2 line-clamp-1">{req.title}</h3>
                 <p className="text-xs text-[var(--muted-foreground)] line-clamp-2 mb-4">{req.description}</p>
                 <div className="flex items-center justify-between pt-3 border-t border-[var(--border)]">
                   <span className="text-amber-400 font-bold text-sm">{budgetXLM.toLocaleString()} XLM</span>
