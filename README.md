@@ -4,13 +4,14 @@ A polished React frontend for a Soroban smart contract that lets teams create RF
 
 React 19 Next.js 15 Stellar Soroban Testnet Freighter wallet
 
-Contract Explorer
+## Contract Explorer
 Stellar Expert: https://stellar.expert/explorer/testnet/contract/CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
 Contract ID: CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
-Freighter wallet address
+
+## Freighter wallet address
 Freighter wallet ID: GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH
 
-Overview
+## Overview
 This project combines:
 - A Soroban smart contract for procurement requests, bidding, and escrow management
 - A React + Next.js dashboard for interacting with the contract
@@ -19,7 +20,7 @@ This project combines:
 
 The current frontend is designed as a clean operator console with live status output, wallet visibility, request/bid summaries, and responsive cards for desktop and mobile.
 
-What You Can Do
+## What You Can Do
 - Create a new procurement request with title, description, and budget (locks funds in escrow)
 - Place a bid as a vendor on an open request
 - Select a winning bid (buyer only)
@@ -28,7 +29,7 @@ What You Can Do
 - Read details of a specific request or bid
 - List all requests and bids for a specific request
 
-Smart Contract Behavior
+## Smart Contract Behavior
 The Soroban contract stores requests and bids with:
 
 Request: buyer, token, title, description, budget, status, selected_bid_id, created_at
@@ -45,21 +46,22 @@ Exposed contract methods:
 - get_request_bids
 - get_all_requests
 
-Frontend Highlights
+## Frontend Highlights
 - Freighter wallet connect flow for authenticated transactions
 - Live contract response panels and toast notifications for transaction results
 - Modern UI with human-readable timestamps and XLM formatting
 - Auto-sync of requests and bids on load and after interaction
 - Responsive dashboard layout with separate setup, active requests, wallet, and history panels
 
-Tech Stack
+## Tech Stack
 - React 19
 - Next.js 15
 - @stellar/stellar-sdk
 - @creit.tech/stellar-wallets-kit
 - Soroban smart contract in Rust
 
-Project Structure
+## Project Structure
+```text
 .
 |-- app/
 |   |-- dashboard/
@@ -80,28 +82,37 @@ Project Structure
 |   |-- store.ts
 |   `-- wallet.ts
 `-- README.md
+```
 
-Local Setup
+## Local Setup
 
-Prerequisites
+### Prerequisites
 - Node.js installed
 - npm installed
 - Freighter wallet extension
 - Access to Stellar Soroban testnet
 
-Install
+### Install
+```bash
 npm install
+```
 
-Run The App
+### Run The App
+```bash
 npm run dev
+```
 
-Production Build
+### Production Build
+```bash
 npm run build
+```
 
-Lint
+### Lint
+```bash
 npm run lint
+```
 
-How The App Talks To Stellar
+## How The App Talks To Stellar
 Write actions are signed with Freighter or other supported wallets:
 - create_request
 - place_bid
@@ -121,7 +132,7 @@ Configuration currently lives in lib/stellar.ts, including:
 - Soroban testnet RPC URL
 - network passphrase
 
-User Flow
+## User Flow
 1. Connect Freighter or a supported wallet.
 2. Fill in procurement details to create a request (locks XLM in escrow).
 3. Vendors connect and place bids on the open request.
@@ -129,7 +140,7 @@ User Flow
 5. Buyer marks the request as completed to disburse funds.
 6. Check history and activity panels to view on-chain state.
 
-Notes
+## Notes
 - The project is currently wired to Stellar testnet.
 - Write actions require Freighter/wallet authorization.
 - Read actions do not require an active wallet signature.
