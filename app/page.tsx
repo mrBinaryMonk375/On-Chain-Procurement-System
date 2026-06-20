@@ -71,12 +71,12 @@ export default function HomePage() {
             Built on Stellar · Soroban Smart Contracts
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-white via-indigo-200 to-purple-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-black">
+            <span>
               On-Chain Procurement
             </span>
             <br />
-            <span className="text-[var(--muted-foreground)]">Reinvented</span>
+            <span>Reinvented</span>
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl text-[var(--muted-foreground)] max-w-2xl mx-auto leading-relaxed">
