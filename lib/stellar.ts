@@ -1,4 +1,4 @@
-import { rpc, Contract, Address, TransactionBuilder, Account, nativeToScVal, scValToNative } from '@stellar/stellar-sdk';
+import { rpc, Contract, Address, TransactionBuilder, Account, nativeToScVal, scValToNative, xdr } from '@stellar/stellar-sdk';
 import { ProcurementRequest, Bid } from '../types';
 
 export const RPC_URL = 'https://soroban-testnet.stellar.org';
