@@ -37,7 +37,7 @@ export default function RootLayout({
         <Providers>
           <MoneyBackground />
           <Navbar />
-          <main className="pt-20 min-h-screen">{children}</main>
+          <main className="pt-28 md:pt-20 min-h-screen">{children}</main>
           <Toast />
         </Providers>
       </body>
