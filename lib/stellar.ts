@@ -17,6 +17,9 @@ export async function callContractRead(method: string, args: unknown[] = []): Pr
     const contract = new Contract(CONTRACT_ID);
     
     const scValArgs = args.map(arg => {
+      if (arg && typeof arg === 'object' && '_switch' in arg) {
+        return arg; // Already an ScVal
+      }
       // If the arg is an address-like string that starts with C or G, parse it as Address
       if (typeof arg === 'string' && (arg.startsWith('C') || arg.startsWith('G')) && arg.length === 56) {
         return Address.fromString(arg).toScVal();
@@ -90,14 +93,14 @@ export async function getRequests(): Promise<ProcurementRequest[]> {
 
 // Fetch details for a specific request
 export async function getRequest(id: number): Promise<ProcurementRequest | null> {
-  const result = await callContractRead('get_request', [id]);
+  const result = await callContractRead('get_request', [nativeToScVal(id, { type: 'u32' })]);
   if (!result) return null;
   return mapRequest(result);
 }
 
 // Fetch bids for a request
 export async function getRequestBids(id: number): Promise<Bid[]> {
-  const result = await callContractRead('get_request_bids', [id]);
+  const result = await callContractRead('get_request_bids', [nativeToScVal(id, { type: 'u32' })]);
   if (!result || !Array.isArray(result)) return [];
   return result.map(mapBid);
 }
