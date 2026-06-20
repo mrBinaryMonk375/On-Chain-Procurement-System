@@ -5,11 +5,15 @@ A polished React frontend for a Soroban smart contract that lets teams create RF
 
 React 19 Next.js 15 Stellar Soroban Testnet Freighter wallet
 
-## Contract Explorer
-Stellar Expert: https://stellar.expert/explorer/testnet/contract/CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
-Contract ID: CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
+## Hackathon Submission Details
+- **Live Demo Link:** [Add your Vercel/Netlify link here]
+- **Wallet Options Screenshot:** 
+  *(Please replace this placeholder with your actual screenshot)*
+  ![Wallet Options Screenshot](./public/wallet-options.png)
+- **Deployed Contract ID:** `CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO`
+- **Transaction Hash (Contract Call):** `fd1b812f6b9301ce3cb94d412e7bdffcabfe1c37fbe679e086a60816ca0b1f39` ([View on Stellar Expert](https://stellar.expert/explorer/testnet/tx/fd1b812f6b9301ce3cb94d412e7bdffcabfe1c37fbe679e086a60816ca0b1f39))
 
-## Freighter wallet address
+## Contract Explorer
 Freighter wallet ID: GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH
 
 ## Overview
