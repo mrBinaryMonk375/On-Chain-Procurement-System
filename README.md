@@ -1,3 +1,9 @@
+<img width="1918" height="906" alt="Screenshot 2026-06-21 035313" src="https://github.com/user-attachments/assets/e04581e1-be4d-4f94-903d-4694297b5f0e" />
+
+<img width="1918" height="911" alt="Screenshot 2026-06-21 035405" src="https://github.com/user-attachments/assets/a2adb405-4f37-4c4e-8569-d39643b9892a" />
+
+<img width="1918" height="902" alt="Screenshot 2026-06-21 035416" src="https://github.com/user-attachments/assets/32c7a8a0-55b8-4c82-8791-a645e67b9b6d" />
+
 <img width="1918" height="900" alt="Screenshot 2026-06-21 025058" src="https://github.com/user-attachments/assets/e531929f-62b9-47c9-bae0-9debd38d452c" />
 # Stellar On-Chain Procurement System
 
