@@ -194,7 +194,7 @@ export function useCreateRequest() {
             Address.fromString(NATIVE_TOKEN_ID).toScVal(),
             nativeToScVal(title),
             nativeToScVal(description),
-            nativeToScVal(stroopsBudget)
+            nativeToScVal(stroopsBudget, { type: 'i128' })
           )
         )
         .setTimeout(60)
@@ -243,9 +243,9 @@ export function usePlaceBid() {
           contract.call(
             'place_bid',
             Address.fromString(address).toScVal(),
-            nativeToScVal(requestId),
-            nativeToScVal(stroopsAmount),
-            nativeToScVal(BigInt(deliveryTime)),
+            nativeToScVal(requestId, { type: 'u32' }),
+            nativeToScVal(stroopsAmount, { type: 'i128' }),
+            nativeToScVal(BigInt(deliveryTime), { type: 'u64' }),
             nativeToScVal(description)
           )
         )
@@ -292,8 +292,8 @@ export function useSelectBid() {
           contract.call(
             'select_bid',
             Address.fromString(address).toScVal(),
-            nativeToScVal(requestId),
-            nativeToScVal(bidId)
+            nativeToScVal(requestId, { type: 'u32' }),
+            nativeToScVal(bidId, { type: 'u32' })
           )
         )
         .setTimeout(60)
@@ -340,7 +340,7 @@ export function useCompleteRequest() {
           contract.call(
             'mark_completed',
             Address.fromString(address).toScVal(),
-            nativeToScVal(requestId)
+            nativeToScVal(requestId, { type: 'u32' })
           )
         )
         .setTimeout(60)
@@ -387,7 +387,7 @@ export function useCancelRequest() {
           contract.call(
             'cancel_request',
             Address.fromString(address).toScVal(),
-            nativeToScVal(requestId)
+            nativeToScVal(requestId, { type: 'u32' })
           )
         )
         .setTimeout(60)
