@@ -12,6 +12,7 @@ import "./globals.css";
 import { Providers } from "@/components/providers";
 import { Navbar } from "@/components/navbar";
 import { Toast } from "@/components/toast";
+import { MoneyBackground } from "@/components/money-background";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}>
         <Providers>
+          <MoneyBackground />
           <Navbar />
           <main className="pt-20 min-h-screen">{children}</main>
           <Toast />

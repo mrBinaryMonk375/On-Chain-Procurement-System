@@ -105,6 +105,13 @@ body {
 .status-inprogress { color: #f59e0b; background: rgba(245,158,11,0.1); }
 .status-completed { color: #6366f1; background: rgba(99,102,241,0.1); }
 .status-cancelled { color: #ef4444; background: rgba(239,68,68,0.1); }
-.status-pending { color: #f59e0b; background: rgba(245,158,11,0.1); }
+
+@keyframes floatAndBurst {
+  0% { transform: translateY(100vh) scale(1) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  80% { transform: translateY(20vh) scale(1) rotate(180deg); opacity: 0.6; }
+  90% { transform: translateY(10vh) scale(2) rotate(220deg); opacity: 0; }
+  100% { transform: translateY(0) scale(2.5) rotate(260deg); opacity: 0; }
+}.status-pending { color: #f59e0b; background: rgba(245,158,11,0.1); }
 .status-success { color: #22c55e; background: rgba(34,197,94,0.1); }
 .status-failed { color: #ef4444; background: rgba(239,68,68,0.1); }
