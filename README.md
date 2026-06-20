@@ -5,17 +5,19 @@
 <img width="1918" height="902" alt="Screenshot 2026-06-21 035416" src="https://github.com/user-attachments/assets/32c7a8a0-55b8-4c82-8791-a645e67b9b6d" />
 
 <img width="1918" height="900" alt="Screenshot 2026-06-21 025058" src="https://github.com/user-attachments/assets/e531929f-62b9-47c9-bae0-9debd38d452c" />
-# Stellar Expert dashboard
-- **Transaction Hash:** `fd1b812f6b9301ce3cb94d412e7bdffcabfe1c37fbe679e086a60816ca0b1f39` ([View on Stellar Expert](https://stellar.expert/explorer/testnet/tx/fd1b812f6b9301ce3cb94d412e7bdffcabfe1c37fbe679e086a60816ca0b1f39))
+# Stellar On-Chain Procurement System
 
-# Stellar Resource Availability Dashboard
 A polished React frontend for a Soroban smart contract that lets teams create RFPs, place bids, escrow funds, and track everything on-chain from one dashboard.
 
 ## Contract Explorer
-- **Deployed Contract ID:** `CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO`
+
+- Stellar Expert:
+  [https://stellar.expert/explorer/testnet/contract/CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO](https://stellar.expert/explorer/testnet/contract/CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO)
+- Contract ID: `CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO`
 
 ## Freighter wallet address
-- **Wallet ID:** `GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH`
+
+- Freighter wallet ID: `GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH`
 
 ## Overview
 This project combines:
