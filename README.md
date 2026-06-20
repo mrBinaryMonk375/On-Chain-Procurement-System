@@ -7,7 +7,8 @@ React 19 Next.js 15 Stellar Soroban Testnet Freighter wallet
 Contract Explorer
 Stellar Expert: https://stellar.expert/explorer/testnet/contract/CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
 Contract ID: CABYZJQCDECRTGDY6UP2RD2ESBF6CTUSKABVRWZUGVATXR3MHSGEZHQO
-Freighter wallet ID: (Your Address Here)
+Freighter wallet address
+Freighter wallet ID: GA7RWV6IBWMP5JLWNXMBK2RIJFCMSX56RPSIHBSWRGMOX7S3ONAEDKLH
 
 Overview
 This project combines:
