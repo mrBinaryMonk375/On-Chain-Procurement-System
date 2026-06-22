@@ -9,6 +9,8 @@
 
 A polished React frontend for a Soroban smart contract that lets teams create RFPs, place bids, escrow funds, and track everything on-chain from one dashboard.
 
+🚀 **Live Demo:** [https://on-chain-procurement-system.vercel.app/](https://on-chain-procurement-system.vercel.app/)
+
 ## Contract Explorer
 
 - Stellar Expert:
