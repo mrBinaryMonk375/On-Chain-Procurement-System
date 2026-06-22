@@ -5,7 +5,7 @@
 <img width="1918" height="902" alt="Screenshot 2026-06-21 035416" src="https://github.com/user-attachments/assets/32c7a8a0-55b8-4c82-8791-a645e67b9b6d" />
 
 <img width="1918" height="900" alt="Screenshot 2026-06-21 025058" src="https://github.com/user-attachments/assets/e531929f-62b9-47c9-bae0-9debd38d452c" />
-# Stellar On-Chain Procurement System
+# On-Chain Procurement System
 
 A polished React frontend for a Soroban smart contract that lets teams create RFPs, place bids, escrow funds, and track everything on-chain from one dashboard.
 
